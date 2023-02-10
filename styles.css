@@ -40,8 +40,8 @@ a {
 }
 
 .background {
-    height: 75vh;
-    background: url(./images/lady.png) bottom 0 right 75px, 
+    height: 100vh;
+    background: url(./images/lady.png) bottom 0px right 80px, 
                 url(./images/background.jpg);
     background-size: auto, cover;
     background-repeat: no-repeat, no-repeat;
@@ -73,30 +73,61 @@ header {
     font-family: "SofiaSans";
 }
 
+.link:hover, 
+.calling:hover, 
+.lang-en:hover,
+.lang-ua:hover {
+    color: var(--blue);
+    transition: all 0.3s ease-in ;
+}
+
+.link:focus, 
+.calling:focus, 
+.lang-en:focus,
+.lang-ua:focus {
+    color: red;
+    transition: all 0.4s ease-in-out ;
+}
+
 nav {
     display: flex;
     gap: 100px;
-    color: var(--black);
 }
 
-nav a {
+nav, nav a {
     color: var(--black);
 }
 
 .phone {
     display: flex;
     justify-content: center;
-    gap: 5px;
 }
 
-.phone a {
+.calling::before {
+    content: '';
+    background-image: url("./images/header-phone.svg");
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+
+.phone a, 
+.calling {
     color: var(--black);
     font-weight: 400;
 }
 
-.phone span {
+.lang-ua span {
     padding-left: 23px;
     font-weight: 600;
+}
+
+.lang-ua::after {
+    content: '|';
+    padding: 0px 7px;
+    color: black;
 }
 
 /* MAIN */
@@ -153,7 +184,7 @@ h1 span {
 .blocks {
     display: grid;
     position: absolute;
-    bottom: 155px;
+    bottom: -70px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -410,7 +441,6 @@ h1 span {
     text-align: center;
 }
 
-
 .appointment-frame h2{
     padding-top: 15px;
 }
@@ -446,6 +476,13 @@ h1 span {
     background-image: url(./images/login_phone.svg), url(./images/line.svg);
     background-repeat: no-repeat;   
     background-position: 10px, 40px;
+}
+
+.frame1Inside input:focus,
+.frame2Inside input:focus {
+    outline: none;
+    border: 2px solid var(--blue);
+    transition: all 0.3s ease-in;
 }
 
 .signUp {
@@ -522,6 +559,22 @@ h2 span {
     font-size: 20px;
 }
 
+.middle-left a:hover {
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.lang-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ua-lang::after {
+    content: '|';
+    padding: 0px 10px;
+    color: black;
+}
+
 .work-time {
     display: flex;
     padding-left: 100px;
@@ -544,8 +597,57 @@ h2 span {
     font-size: 30px;
 }
 
-.right-side span {
+.right-side span,
+.right-side a {
     font-size: 20px;
+}
+
+.right-side a { 
+    position: relative;
+    color: var(--white);
+}
+
+.footer-phone a::before,
+.insta-id a::before,
+.email-name a::before {
+    content: '';
+    background-repeat: no-repeat;
+    padding: 2px 15px;
+    background-size: contain;
+}
+
+.footer-phone a::before {
+    background-image: url("./images/footer-phone.svg");
+}
+
+.insta-id a::before {
+    background-image: url("./images/instagramIcon.svg");
+}
+
+.email-name a::before {
+    background-image: url("./images/emailIcon.svg");
+}
+
+.footer-phone a::after,
+.insta-id a::after,
+.email-name a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s ease-out;
+}
+
+.footer-phone a:hover:after,
+.email-name a:hover:after {
+    width: 86%;
+}
+
+.insta-id a:hover:after {
+    width: 73%;
 }
 
 .position {
@@ -582,7 +684,8 @@ small{
         padding-right: 20px;
     }
 
-    .lang {
+    .lang-ua,
+    .lang-en {
         display: none;
     }
 
@@ -731,7 +834,8 @@ small{
         padding-top: 0px;
     }
 
-    .right-side span {
+    .right-side span,
+    .right-side a {
         font-size: 20px;
     }
 }
@@ -936,7 +1040,8 @@ small{
         gap: 10px;
     }
 
-    .right-side span, 
+    .right-side span,
+    .right-side a, 
     .work-time p,
     .navigation-footer span {
         font-size: 15px;

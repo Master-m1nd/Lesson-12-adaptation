@@ -41,7 +41,7 @@ a {
 
 .background {
     height: 100vh;
-    background: url(./images/lady.png) bottom 0px right 80px, 
+    background: url(./images/lady.png) bottom 7px right 80px, 
                 url(./images/background.jpg);
     background-size: auto, cover;
     background-repeat: no-repeat, no-repeat;
@@ -53,7 +53,7 @@ header {
     display: flex;
     position: absolute;
     padding-top: 50px;
-    width: 100%;
+    width: 97%;
 }
 
 .flex-box {
@@ -184,7 +184,7 @@ h1 span {
 .blocks {
     display: grid;
     position: absolute;
-    bottom: -70px;
+    bottom: -55px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -709,11 +709,12 @@ small{
     }
 
     .info h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .background {
         background-size: 45vh , cover;
+        height: 90vh;
     }
     
     /* INFO BLOCKS */
@@ -816,9 +817,8 @@ small{
 
     .middle-left {
         display: flex;
-        flex-direction: column;
         align-items: center;
-    }   
+    }
 
     .tooth-box {
         height: 90px;
@@ -841,6 +841,11 @@ small{
 }
 
 @media (max-width: 480px) {
+
+    .background {
+        height: 65vh;
+    }
+
     /* HEADER */
     header {
         padding-top: 20px;

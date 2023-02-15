@@ -1056,7 +1056,7 @@ small{
 
     .logo {
         width: 180px;
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
 
     .logo-box {
@@ -1065,6 +1065,10 @@ small{
     }
     .text-logo {
         font-size: 16px;
+    }
+
+    .phone {
+        padding-top: 10px;
     }
 
     .phone a {
@@ -1089,7 +1093,8 @@ small{
     
     /* INFO BLOCKS */
     .info {
-        padding-top: 100px;
+        padding-top: 130px;
+        gap: 20px;
     }
 
     .info h1 {
@@ -1104,7 +1109,7 @@ small{
     }
 
     .bottoms {
-        padding-top: 15px;
+        padding-top: 50px;
         justify-content: center;
         gap: 115px;
     }

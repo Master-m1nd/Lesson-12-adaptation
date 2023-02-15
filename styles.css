@@ -1050,6 +1050,7 @@ small{
     }
 
     .footer-mob {
+        padding-left: 10px;
         flex-direction: column;
         align-items: center;
     }
@@ -1069,6 +1070,7 @@ small{
 
     .phone {
         padding-top: 10px;
+        padding-right: 0px;
     }
 
     .phone a {

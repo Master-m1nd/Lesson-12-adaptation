@@ -1,0 +1,65 @@
+.info h1, 
+.info p, 
+.bottoms {
+    transform: translateY(150%);
+    animation: animate 1.5s ease-in-out forwards;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+.blocks {
+    animation: appiring 1.5s ease-out forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@keyframes appiring {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}
+
+
+
+.circle-point {
+    animation: animation-points 1s ease-out backwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes animation-points {
+    0% {
+        transform: translate(0px, 185px);
+    }
+    100% {
+        opacity: 1;
+    }    
+}
+
+.service-text {
+    animation: animation-text 1s ease-in-out forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+@keyframes animation-text {
+    0% {
+        transform: translateX(0%, -50%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }    
+}

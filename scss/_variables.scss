@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "SofiaSans";
+    src: url(./fonts/SofiaSans-Regular.ttf);
+}
+
+$blue: #46B1DE;
+$black: black;
+$white: white;
+$grey: grey;
+$blue-gray: #A1C7D4;
+$light-gray: #D9D9D9B5;
+$dark-blue: #0F2D4A;
+
+$text-main: "Roboto-Regular", sans-serif;
+$main-medium: "Roboto-Medium", sans-serif;
+$main-bold: "Roboto-Bold", sans-serif;
+$text-sofia: "SofiaSans", sans-serif;

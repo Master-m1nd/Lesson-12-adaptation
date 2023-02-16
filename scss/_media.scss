@@ -1,0 +1,432 @@
+
+@media (max-width: 992px) {
+    
+    /* HEADER */
+
+    header {
+        .container {
+            .flex-box {
+                .logo {
+                    width: 190px;
+                    &-box {
+                        height: 55px;
+                        width: 55px;
+                    }
+                    &-logo {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+                nav {
+                    gap: 10px;
+                }
+                .phone {
+                    padding-right: 20px;
+                }
+                .lang-ua,
+                .lang-en {
+                    display: none;
+                }
+            }
+        }  
+    }
+
+
+    /* MIDDLE */
+
+    main {
+        .middle {
+            font-size: 20px;
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 20px;
+            }
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+   
+
+   /* 3 BLOCKS AND INFO */
+   
+    main {
+        .background {
+            background-size: 45vh , cover;
+            height: 90vh;    
+            .info {
+                padding-top: 120px;
+            }
+            .blocks {
+                display: none;
+            }
+        }
+    }
+
+
+    /* INFO BLOCKS */
+
+    main {
+        .information-block {
+            .container {
+                .info-block {
+                    width: 420px;
+                    .grid-boxes {
+                        gap: 0;
+                        grid-template-rows: repeat(6, 190px);
+                        grid-template-columns: none;
+                      .box {
+                            width: 350px;
+                            .head-box {
+                                .big-text {
+                                    font-size: 19px;
+                                }     
+                            }
+                            .small-text {
+                                font-size: 18px;
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* SERVICES BLOCK */
+
+    main {
+        .services-block {
+            h2 {
+                font-size: 30px;
+            }
+            .services {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                top: 70px;
+                 .tooth-block {
+                    display: none;
+                }
+                .service-text {
+                    position: static;
+                    text-align: center;
+                }
+            } 
+            .warning-block {
+                padding-top: 150px; 
+                .warning-icon {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+
+    /* LOG INPUT */
+
+    main {
+        .log-input {
+        .appointment {
+                width: 490px;
+                height: 200px;
+                .appointment-frame {
+                    width: 470px;
+                    height: 175px;
+                    h2 {
+                        font-size: 17px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                    .login-frames {
+                        gap: 5px;
+                        padding-top: 10px;
+                        .signUp {
+                            width: 70px;
+                            height: 49px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* PHOTO BLOCK */
+
+    main {
+        .photo-block {
+            .photos {
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        .gradient {
+            margin-top: 70px;
+            .footer-info {
+                padding-top: 25px;
+                .left-side {
+                    .tooth {
+                        h2 {
+                            font-size: 25px;
+                        } 
+                        .tooth-box {
+                            height: 90px;
+                            width: 60px;
+                        }
+                    }
+                    .middle-left {
+                        display: flex;
+                        align-items: center;
+                        .work-time {
+                            padding-left: 0px;
+                            padding-top: 0px;
+                        }
+                    }
+                }
+                .right-side {
+                    h2 {
+                        font-size: 25px;
+                    }
+                    a, span {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    header {
+        padding-top: 20px;
+        .flex-box {
+            .header-nav {
+                display: none;
+            }
+        }
+        .header-mob {
+            padding-left: 10px;
+            flex-direction: column;
+            align-items: center;
+            .logo {
+                width: 180px;
+                padding-bottom: 20px;
+                .logo-box {
+                    height: 50px;
+                    width: 50px;
+                }
+                .text-logo {
+                    font-size: 16px;
+                }
+            } 
+            .phone {
+                padding-top: 10px;
+                padding-right: 0px;
+                a {
+                    font-size: 14px;
+                }
+            }
+            .hamburger-menu {
+                right: -50%;
+                top: 0%;
+            }
+        }
+    }
+    
+
+    /* INFO BLOCKS */
+
+    main {
+        .background {
+            height: 85vh;
+            background-position: bottom center;
+            background-size: 35vh , cover;
+            .info {
+                padding-top: 130px;
+                h1 {
+                    padding: 10px;
+                    font-size: 17px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .bottoms {
+                    padding-top: 50px;
+                    justify-content: center;
+                    gap: 115px;
+                    .bottom-position {
+                        height: 30px;
+                        width: 80px;
+                        margin-top: 10px;
+                        border-radius: 6px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* MIDDLE AND INFO BLOCKS*/
+
+    main {
+        .middle {
+            margin-top: 60px;
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        .information-block {
+            .info-block {
+                margin: 25px auto;
+                border-radius: 8px;
+                .grid-boxes {
+                    grid-template-rows: repeat(6, 175px);
+                    padding: 0px 10px; 
+                    .box {
+                        width: 185px;
+                        height: 135px;
+                        .head-box {
+                            padding-bottom: 10px;
+                            .number {
+                                font-size: 35px;
+                            }
+                            .big-text {
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    
+
+    /* SERVICES BLOCK */
+
+    main {
+        .services-block {
+            h2 {
+                font-size: 17px;
+                margin-bottom: 30px;
+                .services {
+                    top: 0px;
+                    .head {
+                        font-size: 15px;
+                    }
+                    .description {
+                        font-size: 14px;
+                        width: fit-content;
+                    }
+                }
+            }
+            .warning-block {
+                display: none;
+            }
+        }
+    }
+
+
+    /* LOG INPUT */
+
+    main {
+        .log-input {
+            .appointment {
+                position: relative;
+                height: 350px;
+                width: 250px;
+                top: 60px;
+                .appointment-frame {
+                    height: 320px;
+                    width: 220px;
+                    .login-frames {
+                        align-items: center;
+                        flex-direction: column;
+                        .signUp {
+                            width: 190px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* PHOTO BLOCK */
+
+    main {
+        .photo-block{
+        .photos {
+                gap: 10px;
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        .gradient {
+            background: rgba(26,130,196,1);
+            .footer-info {
+                flex-direction: column;
+                .left-side {
+                    width: auto;
+                    .tooth {
+                        justify-content: center;
+                        h2 {
+                            font-size: 20px;
+                        }
+                        .tooth-box {
+                            width: 50px;
+                        }                    
+                    }  
+                }
+                .middle-left {
+                    flex-direction: row;
+                    .navigation-footer {
+                    span {
+                        font-size: 15px;
+                    }
+                    } 
+                    .work-time {
+                        font-size: 15px; 
+                    }
+                }
+                .right-side {
+                    gap: 10px;
+                    h2 {
+                        font-size: 20px;
+                    }
+                    a, span {
+                        font-size: 15px; 
+                    }
+                }
+            }
+        }
+    }
+}

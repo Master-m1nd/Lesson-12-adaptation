@@ -1,0 +1,26 @@
+%title {
+    margin:0;
+}
+
+%sectionMargin {
+    @media (min-width: 768px) {
+        .info,
+        .blocks,
+        .info-block,
+        .services-block,
+        .gradient,
+        .appointment {
+            margin: 90px;
+        } 
+    }
+    @media (max-width: 768px) {
+        .info,
+        .blocks,
+        .info-block,
+        .services-block,
+        .gradient,
+        .appointment {
+            margin: 30px;
+        } 
+    }
+}
